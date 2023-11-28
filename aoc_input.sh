@@ -27,7 +27,7 @@ else
     # Fetch input from Advent of Code and save it to input.txt
     INPUT_URL="https://adventofcode.com/$YEAR/day/$DAY/input"
 
-    curl "$INPUT_URL" -H "cookie: session=$AOC_SESSION_COOKIE" --user-agent "User-Agent: aoc_input.sh by ken@friislarsen.net" -o "$DAY_DIR/input.txt"
+    curl "$INPUT_URL" -H "cookie: session=$AOC_SESSION_COOKIE" --user-agent "User-Agent: github.com/kfl/adventofcode_utils/blob/main/aoc_input.sh by ken@friislarsen.net" -o "$DAY_DIR/input.txt"
 
     echo "Input fetched and saved for day $DAY."
 fi

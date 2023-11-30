@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# This script follow the automation guidelines on the /r/adventofcode
+# community
+# [https://www.reddit.com/r/adventofcode/wiki/faqs/automation](wiki). Specifically:
+#
+#  * Once inputs are downloaded, they are cached locally (see end of this file)
+#  * The User-Agent header is set to me since I maintain this tool :)
+
 USER_AGENT="github.com/kfl/adventofcode_utils/blob/main/aoc_input.sh by ken@friislarsen.net"
 
 YEAR=$1

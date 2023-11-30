@@ -2,7 +2,7 @@
 
 # This script follow the automation guidelines on the /r/adventofcode
 # community
-# [https://www.reddit.com/r/adventofcode/wiki/faqs/automation](wiki). Specifically:
+# [wiki](https://www.reddit.com/r/adventofcode/wiki/faqs/automation). Specifically:
 #
 #  * Once inputs are downloaded, they are cached locally (see end of this file)
 #  * The User-Agent header is set to me since I maintain this tool :)

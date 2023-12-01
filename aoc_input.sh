@@ -12,14 +12,12 @@ USER_AGENT="github.com/kfl/adventofcode_utils/blob/main/aoc_input.sh by ken@frii
 YEAR=$1
 DAY=$2
 
-CURRENT_DATE=$(date '+%Y-%m-%d')
-
 # If YEAR and DAY are not provided, use the current date
 if [ -z "$YEAR" ]; then
-    YEAR=$(date -d "$CURRENT_DATE" '+%Y')
+    YEAR=$(date '+%Y')
 fi
 if [ -z "$DAY" ]; then
-    DAY=$(date -d "$CURRENT_DATE" '+%d')
+    DAY=$(date '+%d')
 fi
 
 # Read session cookie from file

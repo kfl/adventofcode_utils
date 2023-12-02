@@ -30,8 +30,8 @@ for file in "$TEMPLATE_PATH"/*; do
 
         # Replace occurrences of "DAY" with the day-specific directory name
         sed -i'.bak' "s/DAY/${DAY_DIR}/g" "$DAY_DIR/$new_filename" || { echo "Failed to replace strings in $new_filename"; exit 1; }
-        rm -rf "$DAY_DIR/*.bak"
     fi
 done
+rm -rf "$DAY_DIR"/*.bak
 
 echo "Day $DAY_NUMBER setup completed using template $TEMPLATE_DIR in directory $DAY_DIR."

@@ -9,8 +9,7 @@ if [ -z "$TEMPLATE_DIR" ]; then
 fi
 
 if [ -z "$DAY_NUMBER" ]; then
-    CURRENT_DATE=$(date '+%d')
-    DAY_NUMBER=$(printf "%d" "$CURRENT_DATE")
+    DAY_NUMBER=$(printf "%d" $(( 10#$(date '+%d') )))
 fi
 
 SCRIPT_DIR=$(dirname "$0")

@@ -17,7 +17,7 @@ if [ -z "$YEAR" ]; then
     YEAR=$(date '+%Y')
 fi
 if [ -z "$DAY" ]; then
-    DAY=$(printf "%d" $(date '+%d'))
+    DAY=$(printf "%d" $(( 10#$(date '+%d') )))
 fi
 
 # Read session cookie from file

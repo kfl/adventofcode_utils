@@ -1,7 +1,7 @@
 Advent of Code utilities
 ========================
 
-Utilities for working with [advent of code](https://adventofcode.com/2023) puzzles.
+Utilities for working with [advent of code](https://adventofcode.com/) puzzles.
 
 The [`aoc_input.sh`](./aoc_input.sh) script follow the automation
 guidelines on the `/r/adventofcode` community

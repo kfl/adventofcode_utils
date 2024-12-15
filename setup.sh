@@ -2,6 +2,7 @@
 
 TEMPLATE_DIR=$1
 DAY_NUMBER=$2
+YEAR=$3
 
 if [ -z "$TEMPLATE_DIR" ]; then
     echo "Please provide the template directory name as the first argument."
@@ -11,6 +12,11 @@ fi
 if [ -z "$DAY_NUMBER" ]; then
     DAY_NUMBER=$(printf "%d" $(( 10#$(date '+%d') )))
 fi
+
+if [ -z "$YEAR" ]; then
+    YEAR=$(date '+%Y')
+fi
+
 
 SCRIPT_DIR=$(dirname "$0")
 TEMPLATE_PATH="$SCRIPT_DIR/$TEMPLATE_DIR"
@@ -32,5 +38,7 @@ for file in "$TEMPLATE_PATH"/*; do
     fi
 done
 rm -rf "$DAY_DIR"/*.bak
+
+"$SCRIPT_DIR/aoc_input.sh" $YEAR $DAY_NUMBER
 
 echo "Day $DAY_NUMBER setup completed using template $TEMPLATE_DIR in directory $DAY_DIR."

@@ -1,4 +1,4 @@
-{-# LANGUAGE LambdaCase, Strict #-}
+{-# LANGUAGE LambdaCase #-}
 module Main where
 
 import qualified Data.Char as C

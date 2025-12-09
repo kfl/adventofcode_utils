@@ -17,5 +17,5 @@ executable DAY
                       split
 
     hs-source-dirs:   .
-    default-language: GHC2021
+    default-language: GHC2024
     ghc-options:      -O2 -threaded -rtsopts -with-rtsopts=-N
